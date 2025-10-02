@@ -1,18 +1,18 @@
-# 🚀 Cybersecurity Intrusion Detection Dashboard  
+# Cybersecurity Intrusion Detection Dashboard  
 *(Final Project – Data Analysis Bootcamp | Le Wagon)*  
 
 This project investigates **early detection of cyberattacks using network traffic signals**, applying **Exploratory Data Analysis (EDA)** and **Machine Learning** to identify risk patterns and recommend proactive defense strategies.  
 
-👩‍💻👨‍💻 Project developed by:  
+Project developed by:  
 - Ingrid Pessoa Bighetti  
 - Rodrigo Martins  
 - Cíntia Simões  
 
 ---
 
-## 📂 Repository Structure  
+## Repository Structure  
 
-- `data/` → Dataset used in this project  
+- `data/` → Dataset used in this project [Dataset link](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)   
 - `notebooks/`  
   - `01_exploratory_analysis.ipynb` → [Exploration Notebook](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
   - `02_machine_learning.ipynb` → [ML Notebook](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
@@ -21,7 +21,7 @@ This project investigates **early detection of cyberattacks using network traffi
 
 ---
 
-## 📊 Dataset  
+## Dataset  
 
 - **Source**: *Cybersecurity Intrusion Detection Dataset*  
 - **Records**: 9,537 sessions  
@@ -32,7 +32,7 @@ This project investigates **early detection of cyberattacks using network traffi
 
 ---
 
-## 📈 Exploratory Dashboard  
+## Exploratory Dashboard  
 
 The dashboard shows distribution of attacks by protocol, IP reputation, failed logins, and browser type.  
 
@@ -40,7 +40,7 @@ The dashboard shows distribution of attacks by protocol, IP reputation, failed l
 
 ---
 
-## 🤖 Machine Learning  
+## Machine Learning  
 
 Notebook with training and evaluation of models:  
 
@@ -52,7 +52,7 @@ Notebook with training and evaluation of models:
 
 ---
 
-## 📌 Results & Recommendations  
+## Results & Recommendations  
 
 - **44.7% of sessions** showed attacks  
 - Strong correlation between failed logins and attacks (≥3 = 100%)  
@@ -65,7 +65,7 @@ Notebook with training and evaluation of models:
 
 ---
 
-## 🛡 SOC Application  
+## SOC Application  
 
 This dashboard can be applied in a **Security Operations Center (SOC)** to:  
 - Monitor real-time traffic  
@@ -74,26 +74,32 @@ This dashboard can be applied in a **Security Operations Center (SOC)** to:
 
 ---
 
-## 📚 Sources  
+## Sources  
 
 - [Cybersecurity Intrusion Detection Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
-- Research papers and articles on Intrusion Detection Systems (IDS) and Network Security  
+- Research papers and articles on Intrusion Detection Systems (IDS) and Network Security
+
+
+## Contato 
+[LinkedIn](https://www.linkedin.com/in/ingrid-pessoa-bighetti-79849650/)
+
+[E-mail](mailto:ingridpessoa1992@gmail.com)
 
 ---
 
-# 🚀 Dashboard de Detecção de Intrusões em Cibersegurança  
+# Dashboard de Detecção de Intrusões em Cibersegurança  
 *(Projeto Final – Bootcamp de Análise de Dados | Le Wagon)*  
 
 Este projeto investiga a **detecção precoce de ciberataques a partir de sinais de tráfego de rede**, aplicando **Análise Exploratória de Dados (EDA)** e **Aprendizado de Máquina** para identificar padrões de risco e recomendar estratégias de defesa proativa.  
 
-👩‍💻👨‍💻 Projeto desenvolvido por:  
+Projeto desenvolvido por:  
 - Ingrid Pessoa Bighetti  
 - Rodrigo Martins  
 - Cíntia Simões  
 
 ---
 
-## 📂 Estrutura do Repositório  
+## Estrutura do Repositório  
 
 - `data/` → Dataset utilizado no projeto  
 - `notebooks/`  
@@ -104,7 +110,7 @@ Este projeto investiga a **detecção precoce de ciberataques a partir de sinais
 
 ---
 
-## 📊 Dataset  
+## Dataset  
 
 - **Fonte**: *Cybersecurity Intrusion Detection Dataset*  
 - **Registros**: 9.537 sessões  
@@ -115,7 +121,7 @@ Este projeto investiga a **detecção precoce de ciberataques a partir de sinais
 
 ---
 
-## 📈 Dashboard Exploratória  
+## Dashboard Exploratória  
 
 O dashboard mostra a distribuição dos ataques por protocolo, reputação de IP, falhas de login e tipo de navegador.  
 
@@ -123,7 +129,7 @@ O dashboard mostra a distribuição dos ataques por protocolo, reputação de IP
 
 ---
 
-## 🤖 Aprendizado de Máquina  
+## Aprendizado de Máquina  
 
 Notebook com treinamento e avaliação dos modelos:  
 
@@ -148,7 +154,7 @@ Notebook com treinamento e avaliação dos modelos:
 
 ---
 
-## 🛡 Aplicação em SOC  
+## Aplicação em SOC  
 
 Este dashboard pode ser aplicado em um **Centro de Operações de Segurança (SOC)** para:  
 - Monitorar o tráfego em tempo real  
@@ -162,4 +168,6 @@ Este dashboard pode ser aplicado em um **Centro de Operações de Segurança (SO
 - [Cybersecurity Intrusion Detection Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
 - Artigos e papers sobre Intrusion Detection Systems (IDS) e Segurança de Redes  
 
-
+## Contato 
+## [LinkedIn](https://www.linkedin.com/in/ingrid-pessoa-bighetti-79849650/)
+## [E-mail](mailto:ingridpessoa1992@gmail.com)
