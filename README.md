@@ -1,4 +1,4 @@
-# Cybersecurity Intrusion Detection Dashboard  
+# Cybersecurity Intrusion Detection  
 *(Final Project – Data Analysis Bootcamp | Le Wagon)*  
 
 This project investigates **early detection of cyberattacks using network traffic signals**, applying **Exploratory Data Analysis (EDA)** and **Machine Learning** to identify risk patterns and recommend proactive defense strategies.  
@@ -16,7 +16,7 @@ Project developed by:
 - `notebooks/`  
   - `01_exploratory_analysis.ipynb` → [Exploration Notebook](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
   - `02_machine_learning.ipynb` → [ML Notebook](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
-- `dashboard/` → [EDA Dashboard](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)  
+- `dashboard/` → [Dashboard](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)  
 - `README.md` → Project documentation  
 
 ---
