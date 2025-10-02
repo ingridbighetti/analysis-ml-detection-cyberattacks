@@ -141,7 +141,7 @@ Notebook com treinamento e avaliação dos modelos:
 
 ---
 
-## 📌 Resultados & Recomendações  
+## Resultados & Recomendações  
 
 - **44,7% das sessões** apresentaram ataques  
 - Forte correlação entre falhas de login e ataques (≥3 = 100%)  
@@ -163,11 +163,12 @@ Este dashboard pode ser aplicado em um **Centro de Operações de Segurança (SO
 
 ---
 
-## 📚 Fontes  
+## Fontes  
 
 - [Cybersecurity Intrusion Detection Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
 - Artigos e papers sobre Intrusion Detection Systems (IDS) e Segurança de Redes  
 
 ## Contato 
-## [LinkedIn](https://www.linkedin.com/in/ingrid-pessoa-bighetti-79849650/)
-## [E-mail](mailto:ingridpessoa1992@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/ingrid-pessoa-bighetti-79849650/)
+
+[E-mail](mailto:ingridpessoa1992@gmail.com)
