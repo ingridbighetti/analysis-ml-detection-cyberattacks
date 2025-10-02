@@ -1,87 +1,165 @@
-# Detecção Preditiva de Ataques Cibernéticos: Uma Abordagem de Machine Learning
+# 🚀 Cybersecurity Intrusion Detection Dashboard  
+*(Final Project – Data Analysis Bootcamp | Le Wagon)*  
 
-## Descrição
-Este projeto tem como objetivo desenvolver um **modelo de Machine Learning** capaz de detectar intrusões cibernéticas com base em padrões de tráfego de rede e comportamento de usuários.  
+This project investigates **early detection of cyberattacks using network traffic signals**, applying **Exploratory Data Analysis (EDA)** and **Machine Learning** to identify risk patterns and recommend proactive defense strategies.  
 
-Foi desenvolvido como trabalho de **final de curso na Le Wagon**, no curso de **Data Analytics**, em equipe com **Rodrigo Martins** e **Cíntia Simões**.  
-
-Utilizamos o dataset [Cybersecurity 🪪 Intrusion 🦠 Detection Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data), que contém registros de sessões de rede com informações de protocolos, tentativas de login e indicadores de ataque. O projeto inclui **análise exploratória, pré-processamento, modelagem, avaliação e dashboard interativo** para visualização de insights.
-
----
-
-## Tecnologias Utilizadas
-- Python (Pandas, Numpy, Scikit-learn, XGBoost, LightGBM, Matplotlib, Seaborn)  
-- Google Colab (Notebooks na nuvem)  
-- Looker Studio (visualização de dados)
+👩‍💻👨‍💻 Project developed by:  
+- Ingrid Pessoa Bighetti  
+- Rodrigo Martins  
+- Cíntia Simões  
 
 ---
 
-## Estrutura do Projeto
-- `data/` → Dados brutos e processados.  
-- `notebooks/` → Notebooks de análise exploratória, pré-processamento e modelagem (Google Colab).  
-- `src/` → Scripts de funções para tratamento, modelagem e avaliação.  
-- `models/` → Modelos treinados no Colab (XGBClassifier e outros testados).  
-- `reports/` → Gráficos, visualizações e relatórios de resultados.  
-- `dashboard/` → Links ou arquivos do dashboard interativo (Looker Studio).  
-- `docs/` → Referências bibliográficas e materiais complementares.
+## 📂 Repository Structure  
+
+- `data/` → Dataset used in this project  
+- `notebooks/`  
+  - `01_exploratory_analysis.ipynb` → [Exploration Notebook](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
+  - `02_machine_learning.ipynb` → [ML Notebook](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
+- `dashboard/` → [EDA Dashboard](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)  
+- `README.md` → Project documentation  
 
 ---
 
-## Variáveis do Dataset
-- `session_id`: Identificador da sessão  
-- `network_packet_size`: Tamanho médio dos pacotes de rede  
-- `protocol_type`: Tipo de protocolo (TCP, UDP, ICMP)  
-- `login_attempts`: Número de tentativas de login  
-- `session_duration`: Duração da sessão  
-- `encryption_used`: Uso de criptografia (sim/não)  
-- `ip_reputation_score`: Reputação do IP de origem  
-- `failed_logins`: Número de falhas de login  
-- `browser_type`: Navegador utilizado  
-- `unusual_time_access`: Acesso em horário incomum (sim/não)  
-- `attack_detected`: Variável alvo (0 = acesso legítimo, 1 = ataque)
+## 📊 Dataset  
+
+- **Source**: *Cybersecurity Intrusion Detection Dataset*  
+- **Records**: 9,537 sessions  
+- **Features**: 10 variables (network + user behavior)  
+- **Target**: Binary classification → Attack detected (Yes/No)  
+
+👉 [Dataset link](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
 
 ---
 
-## Etapas do Projeto
-1. **Coleta de Dados**  
-   - Dataset: [Cybersecurity Intrusion Detection Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
-   - Formato: CSV, com registros de sessões de rede e variáveis de comportamento.
+## 📈 Exploratory Dashboard  
 
-2. **Análise Exploratória e Pré-processamento**  
-   - Notebook: [EDA e Preprocessamento](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
-   - Limpeza de dados, tratamento de valores ausentes e engenharia de features.
+The dashboard shows distribution of attacks by protocol, IP reputation, failed logins, and browser type.  
 
-3. **Treinamento de Modelos de Classificação**  
-   - Notebook: [Modelo de ML](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
-   - Algoritmos testados:
-     - RandomForestClassifier (Floresta Aleatória)  
-     - LGBMClassifier (Máquina de Reforço de Gradiente Leve)  
-     - XGBClassifier (Reforço de Gradiente Extremo)  
-     - ExtraTreesClassifier (Árvores Extremamente Aleatórias)  
-   - **Modelo escolhido:** XGBClassifier  
-   - Objetivo: Classificação de sessões como ataque ou legítima.
-
-4. **Avaliação de Métricas**  
-   - Métricas utilizadas: Accuracy, Precision, Recall, F1-score, AUC  
-   - Comparação entre modelos para seleção do melhor desempenho.
-
-5. **Exportação do Modelo Final**  
-   - Modelos treinados ficam disponíveis nos notebooks do Colab (`notebooks/`).  
-
-6. **Dashboard Interativo**  
-   - [Looker Studio Dashboard](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)  
-   - Visualização de insights e resultados do modelo.
+👉 [Access the Dashboard](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)  
 
 ---
 
-## Referências
-- [Dataset no Kaggle](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
-- [Notebook de Análise Exploratória e Pré-processamento](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
-- [Notebook de Modelagem de ML](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
-- [Looker Studio Dashboard](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)
+## 🤖 Machine Learning  
+
+Notebook with training and evaluation of models:  
+
+- Models tested: RandomForest, LightGBM, XGBoost, ExtraTrees  
+- Best model: **XGBoost Classifier**  
+
+👉 [Exploration Notebook](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
+👉 [ML Notebook](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
 
 ---
 
-## Contato
-- [LinkedIn](https://www.linkedin.com/in/ingrid-pessoa-bighetti-79849650/)  
-- [E-mail](mailto:ingridpessoa1992@gmail.com)
+## 📌 Results & Recommendations  
+
+- **44.7% of sessions** showed attacks  
+- Strong correlation between failed logins and attacks (≥3 = 100%)  
+- High-risk IPs = 100% compromised  
+
+**Recommendations:**  
+- Flag accounts with >5 failed logins in <1 min  
+- Monitor “Unknown” browsers and low-reputation IPs  
+- Trigger alerts for ICMP spikes or unencrypted traffic  
+
+---
+
+## 🛡 SOC Application  
+
+This dashboard can be applied in a **Security Operations Center (SOC)** to:  
+- Monitor real-time traffic  
+- Prioritize alerts by risk  
+- Detect anomalies faster  
+
+---
+
+## 📚 Sources  
+
+- [Cybersecurity Intrusion Detection Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
+- Research papers and articles on Intrusion Detection Systems (IDS) and Network Security  
+
+---
+
+# 🚀 Dashboard de Detecção de Intrusões em Cibersegurança  
+*(Projeto Final – Bootcamp de Análise de Dados | Le Wagon)*  
+
+Este projeto investiga a **detecção precoce de ciberataques a partir de sinais de tráfego de rede**, aplicando **Análise Exploratória de Dados (EDA)** e **Aprendizado de Máquina** para identificar padrões de risco e recomendar estratégias de defesa proativa.  
+
+👩‍💻👨‍💻 Projeto desenvolvido por:  
+- Ingrid Pessoa Bighetti  
+- Rodrigo Martins  
+- Cíntia Simões  
+
+---
+
+## 📂 Estrutura do Repositório  
+
+- `data/` → Dataset utilizado no projeto  
+- `notebooks/`  
+  - `01_exploratory_analysis.ipynb` → [Notebook de Exploração](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
+  - `02_machine_learning.ipynb` → [Notebook de Machine Learning](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
+- `dashboard/` → [Dashboard Exploratória](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)  
+- `README.md` → Documentação do projeto  
+
+---
+
+## 📊 Dataset  
+
+- **Fonte**: *Cybersecurity Intrusion Detection Dataset*  
+- **Registros**: 9.537 sessões  
+- **Variáveis**: 10 variáveis (rede + comportamento do usuário)  
+- **Variável alvo**: Classificação binária → Ataque detectado (Sim/Não)  
+
+👉 [Link para o Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
+
+---
+
+## 📈 Dashboard Exploratória  
+
+O dashboard mostra a distribuição dos ataques por protocolo, reputação de IP, falhas de login e tipo de navegador.  
+
+👉 [Acessar o Dashboard](https://lookerstudio.google.com/reporting/f113278d-5a0b-47e0-8083-f71180fe5338)  
+
+---
+
+## 🤖 Aprendizado de Máquina  
+
+Notebook com treinamento e avaliação dos modelos:  
+
+- Modelos testados: RandomForest, LightGBM, XGBoost, ExtraTrees  
+- Melhor modelo: **XGBoost Classifier**  
+
+👉 [Notebook de Exploração](https://colab.research.google.com/drive/1xrLoRhMHhXFOeq-iNq4ZObZVPmuLpe4G?usp=sharing)  
+👉 [Notebook de Machine Learning](https://colab.research.google.com/drive/1TXT9j1mv9K_lphKSlrmcTr8MeLW1x6eW?usp=sharing)  
+
+---
+
+## 📌 Resultados & Recomendações  
+
+- **44,7% das sessões** apresentaram ataques  
+- Forte correlação entre falhas de login e ataques (≥3 = 100%)  
+- IPs de alto risco = 100% comprometidos  
+
+**Recomendações:**  
+- Sinalizar contas com >5 falhas de login em <1 min  
+- Monitorar navegadores “Desconhecidos” e IPs de baixa reputação  
+- Acionar alertas para picos de ICMP ou tráfego não criptografado  
+
+---
+
+## 🛡 Aplicação em SOC  
+
+Este dashboard pode ser aplicado em um **Centro de Operações de Segurança (SOC)** para:  
+- Monitorar o tráfego em tempo real  
+- Priorizar alertas por risco  
+- Detectar anomalias com mais rapidez  
+
+---
+
+## 📚 Fontes  
+
+- [Cybersecurity Intrusion Detection Dataset](https://www.kaggle.com/datasets/dnkumars/cybersecurity-intrusion-detection-dataset/data)  
+- Artigos e papers sobre Intrusion Detection Systems (IDS) e Segurança de Redes  
+
+
